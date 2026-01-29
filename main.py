@@ -1,5 +1,6 @@
 from asphalt_road import AsphaltRoad
-
+from car import Car      # Добавлено
+from track import Track  # Добавлено
 
 if __name__ == "__main__":
     asphalt_road = AsphaltRoad()
@@ -17,4 +18,4 @@ if __name__ == "__main__":
     asphalt_road.drive(car, distance)
     asphalt_road.drive(track, distance)
 
-    asphalt_road.print_vehicle_remaining_fuels() 
+    asphalt_road.print_vehicle_remaining_fuels()
