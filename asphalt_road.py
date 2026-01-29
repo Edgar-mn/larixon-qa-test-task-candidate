@@ -16,4 +16,6 @@ class AsphaltRoad:
 
     def print_vehicle_remaining_fuels(self):
         for vehicle in self.vehicles:
-            print(f"Vehicle remaining fuel: {vehicle.remaining_fuel()}") 
+            # This line gets the name of the class (e.g., 'Car' or 'Track')
+            class_name = vehicle.__class__.__name__
+            print(f"{class_name} remaining fuel: {vehicle.remaining_fuel()}")
